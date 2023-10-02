@@ -117,4 +117,12 @@ return {
     {
         "lewis6991/gitsigns.nvim",
     },
+
+    -- Trouble
+    {
+        "folke/trouble.nvim",
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+    }
 }
