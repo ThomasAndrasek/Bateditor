@@ -155,6 +155,13 @@ local mappings = {
             "Diff",
         },
     },
+
+    -- Warnings
+    w = {
+        name = "Warning",
+        d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Warnings Current File"},
+        w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Warnings Workspace"},
+    }
 }
 
 which_key.setup(setup)

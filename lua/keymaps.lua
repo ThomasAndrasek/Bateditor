@@ -8,6 +8,9 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.g.copilot_no_tab_map = true
+keymap("i", "<C-J>", 'copilot#Accept("<CR>")', {silent = true, expr = true})
+
 keymap("n", "<C-h>", "<C-w>h", opts) -- left window
 keymap("n", "<C-k>", "<C-w>k", opts) -- up window
 keymap("n", "<C-j>", "<C-w>j", opts) -- down window
@@ -21,8 +24,8 @@ keymap("n", "<c-left>", ":vertical resize +2<cr>", opts)
 
 
 -- navigate buffers
-keymap("n", "<tab>", ":bnext<cr>", opts) -- Next Tab 
-keymap("n", "<s-tab>", ":bprevious<cr>", opts) -- Previous tab
+keymap("n", "<leader><tab>", ":bnext<cr>", opts) -- Next Tab 
+keymap("n", "<leader><s-tab>", ":bprevious<cr>", opts) -- Previous tab
 keymap("n", "<leader>h", ":nohlsearch<cr>", opts) -- No highlight search
 
 -- move text up and down
