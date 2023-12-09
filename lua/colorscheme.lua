@@ -1,2 +1,2 @@
 -- Set Colorscheme
-vim.cmd[[colorscheme gotham]]
+vim.cmd[[colorscheme tokyonight-night]]

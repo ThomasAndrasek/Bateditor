@@ -16,8 +16,11 @@ return {
 
     -- Colorscheme
     {
-        "whatyouhide/vim-gotham"
-    },
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
 
     -- Copilot
     {
